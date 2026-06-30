@@ -1,0 +1,162 @@
+.weather-card {
+  width: 100%;
+  max-width: 420px;
+
+  margin: 45px auto;
+
+  padding: 35px 30px;
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+
+  color: #fff;
+
+  transition: all 0.35s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.4);
+}
+
+.weather-card h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+  letter-spacing: 1px;
+}
+
+.weather-card h1 {
+  font-size: clamp(3.4rem, 9vw, 5rem);
+  font-weight: 700;
+
+  margin: 15px 0;
+
+  line-height: 1;
+
+  background: linear-gradient(135deg, #ffffff, #7dd3fc);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.weather-card p {
+  font-size: 18px;
+
+  margin: 14px 0;
+
+  color: #dbeafe;
+}
+
+.weather-card p:first-of-type {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 600;
+
+  color: #ffffff;
+
+  text-transform: capitalize;
+
+  margin-bottom: 25px;
+}
+
+.weather-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===========================
+   Laptops
+=========================== */
+
+@media (max-width: 1200px) {
+  .weather-card {
+    max-width: 400px;
+  }
+}
+
+/* ===========================
+   Tablets
+=========================== */
+
+@media (max-width: 992px) {
+  .weather-card {
+    max-width: 380px;
+    padding: 30px 26px;
+  }
+
+  .weather-card p {
+    font-size: 17px;
+  }
+}
+
+/* ===========================
+   Large Phones
+=========================== */
+
+@media (max-width: 768px) {
+  .weather-card {
+    width: 92%;
+
+    margin: 35px auto;
+
+    padding: 28px 22px;
+  }
+
+  .weather-card p {
+    font-size: 16px;
+  }
+}
+
+/* ===========================
+   Phones
+=========================== */
+
+@media (max-width: 576px) {
+  .weather-card {
+    width: 100%;
+    max-width: 360px;
+
+    padding: 24px 20px;
+
+    border-radius: 24px;
+  }
+
+  .weather-card p:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width: 375px) {
+  .weather-card {
+    padding: 20px 16px;
+
+    border-radius: 20px;
+  }
+
+  .weather-card p {
+    font-size: 15px;
+  }
+
+  .weather-card p:first-of-type {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,190 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  width: 100%;
+  max-width: 700px;
+
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.search input {
+  width: 100%;
+  max-width: 500px;
+  height: 58px;
+
+  padding: 0 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  color: #ffffff;
+  font-size: 17px;
+  font-family: inherit;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.search input::placeholder {
+  color: #cbd5e1;
+}
+
+.search input:focus,
+.search input:focus-visible {
+  outline: none;
+  border-color: #60a5fa;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 0 0 2px rgba(96, 165, 250, 0.2),
+    0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.search button {
+  height: 58px;
+  min-width: 140px;
+
+  padding: 0 32px;
+
+  border: none;
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+.search button:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+
+  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.45);
+}
+
+.search button:active {
+  transform: scale(0.97);
+}
+
+/* ===========================
+   Laptops
+=========================== */
+
+@media (max-width: 1200px) {
+  .search {
+    max-width: 650px;
+  }
+}
+
+/* ===========================
+   Tablets
+=========================== */
+
+@media (max-width: 992px) {
+  .search {
+    max-width: 600px;
+    padding: 0 18px;
+  }
+
+  .search input,
+  .search button {
+    height: 56px;
+  }
+}
+
+/* ===========================
+   Large Phones
+=========================== */
+
+@media (max-width: 768px) {
+  .search {
+    flex-direction: column;
+    gap: 12px;
+
+    margin: 35px auto;
+    padding: 0 15px;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+    max-width: 360px;
+    height: 54px;
+  }
+
+  .search button {
+    min-width: unset;
+    padding: 0;
+  }
+}
+
+/* ===========================
+   Phones
+=========================== */
+
+@media (max-width: 576px) {
+  .search {
+    margin: 30px auto;
+  }
+
+  .search input,
+  .search button {
+    height: 52px;
+
+    font-size: 16px;
+
+    border-radius: 16px;
+  }
+
+  .search input {
+    padding: 0 18px;
+  }
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width: 375px) {
+  .search {
+    padding: 0 12px;
+  }
+
+  .search input,
+  .search button {
+    height: 50px;
+
+    font-size: 15px;
+
+    border-radius: 14px;
+  }
+
+  .search input {
+    padding: 0 16px;
+  }
+}
